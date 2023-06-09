@@ -72,7 +72,7 @@ export default function Home() {
       case Networks.Goerli:
         return 5;
       default:
-        return 11155111;
+        return 1071;
     }
   };
 
