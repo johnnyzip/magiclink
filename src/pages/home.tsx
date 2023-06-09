@@ -71,6 +71,8 @@ export default function Home() {
         return 420;
       case Networks.Goerli:
         return 5;
+      case Networks.ShimmerEVM:
+        return 1071;
       default:
         return 1071;
     }
