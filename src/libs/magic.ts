@@ -19,6 +19,11 @@ const formattedNetwork = (): EthNetworkConfiguration => {
         rpcUrl: process.env.REACT_APP_GOERLI_RPC_URL as string,
         chainId: 5,
       };
+    case Networks.ShimmerEVM:
+      return {
+        rpcUrl: process.env.SHIMMEREVM_RPC_URL as string,
+        chainId: 1071,
+      };
     default:
       return {
         rpcUrl: process.env.SHIMMEREVM_RPC_URL as string,
