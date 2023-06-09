@@ -21,7 +21,7 @@ const formattedNetwork = (): EthNetworkConfiguration => {
       };
     default:
       return {
-        rpcUrl: process.env.REACT_APP_SEPOLIA_RPC_URL as string,
+        rpcUrl: process.env.SHIMMEREVM_RPC_URL as string,
         chainId: 1071,
       };
   }
