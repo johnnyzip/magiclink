@@ -24,10 +24,15 @@ const formattedNetwork = (): EthNetworkConfiguration => {
         rpcUrl: process.env.SHIMMEREVM_RPC_URL as string,
         chainId: 1071,
       };
+          };
+    case Networks.Sepolia:
+      return {
+        rpcUrl: process.env.SEPOLIA_RPC_URL as string,
+        chainId: 11155111,
+      };
     default:
       return {
-        rpcUrl: process.env.SHIMMEREVM_RPC_URL as string,
-        chainId: 1071,
+        chainId: 11155111,
       };
   }
 };
